@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1541348822 source:c:\users\dell\desktop\completador\main.cpp
+	<iostream>
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<windows.h>
+	<cstring>
+	<string>
+
