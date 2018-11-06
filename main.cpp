@@ -63,13 +63,16 @@ int  vPL(PL **abb, string op2, int x)
     {
         return 0;
     }
-        if(op2 [x]== (*abb)->pl[x])
+    string pl3 = (*abb)->pl;
+    pl3.resize(x+1);
+        if(op2 == pl3)
         {
             cout << (*abb)->pl << "\n";
             vPL(&(*abb)->maior, op2, x);
         }
         else
             vPL(&(*abb)->menor, op2, x);
+
 }
 
 int main()
@@ -95,6 +98,8 @@ int main()
         if(kbhit())
         {
             op = getch();
+            if(op == 27)
+                break;
             if(op != 8)
             {
                 op2.push_back(op);
