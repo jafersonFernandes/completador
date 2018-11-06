@@ -63,7 +63,7 @@ int  vPL(PL **abb, string op2, int x)
     {
         return 0;
     }
-        if(op2 == (*abb)->pl[x])
+        if(op2 [x]== (*abb)->pl[x])
         {
             cout << (*abb)->pl << "\n";
             vPL(&(*abb)->maior, op2, x);
@@ -97,7 +97,6 @@ int main()
             op = getch();
             if(op != 8)
             {
-                cout << " ";
                 op2.push_back(op);
                 mgotoxy(0, 0);
                 system("cls");
