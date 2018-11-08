@@ -8,13 +8,20 @@
 	<cstring>
 	<string>
 
-1541671491 source:c:\users\dell\documents\github\completador\main.cpp
+1541684343 source:c:\users\dell\documents\github\completador\main.cpp
 	<iostream>
 	<stdio.h>
 	<stdlib.h>
 	<conio.h>
-	<windows.h>
-	<cstring>
 	<string>
-	<algorithm>
+	"exibir.hpp"
+	"struct.hpp"
+
+1541682213 source:c:\users\dell\documents\github\completador\exibir.cpp
+	"exibir.hpp"
+	<windows.h>
+
+1541682758 c:\users\dell\documents\github\completador\exibir.hpp
+
+1541684507 c:\users\dell\documents\github\completador\struct.hpp
 
