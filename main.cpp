@@ -11,7 +11,7 @@ using namespace std;
 int main()
 {
     PL *abb = NULL;
-    string pl = "abcdefgh";
+    string pl;
     add(&abb,pl);
     pl = "abcdefg";
     add(&abb,pl);
