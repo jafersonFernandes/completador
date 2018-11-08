@@ -8,7 +8,7 @@
 	<cstring>
 	<string>
 
-1541512709 source:c:\users\dell\documents\github\completador\main.cpp
+1541671491 source:c:\users\dell\documents\github\completador\main.cpp
 	<iostream>
 	<stdio.h>
 	<stdlib.h>
@@ -16,4 +16,5 @@
 	<windows.h>
 	<cstring>
 	<string>
+	<algorithm>
 
