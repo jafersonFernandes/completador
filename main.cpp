@@ -5,24 +5,28 @@
 #include <string>
 #include "exibir.hpp"
 #include "struct.hpp"
+#include <fstream>
+#include <sstream>
 
 using namespace std;
 
 int main()
 {
+
+    ofstream Arquivo("persistencia.txt", ios::out);
     PL *abb = NULL;
     string pl;
-    add(&abb,pl);
+    add(&abb,pl,Arquivo);
     pl = "abcdefg";
-    add(&abb,pl);
+    add(&abb,pl,Arquivo);
     pl = "abcdef";
-    add(&abb,pl);
+    add(&abb,pl,Arquivo);
     pl = "abcde";
-    add(&abb,pl);
+    add(&abb,pl,Arquivo);
     pl = "abcd";
-    add(&abb,pl);
+    add(&abb,pl,Arquivo);
     pl = "abd";
-    add(&abb,pl);
+    add(&abb,pl,Arquivo);
     int x = 0;
     int y = 0;
     int t = 0;
@@ -30,6 +34,7 @@ int main()
     string op2;
     string  frase;
     frase.clear();
+    ifstream Arquivo2("persistencia.txt");
     while(true)
     {
         if(kbhit())
@@ -57,6 +62,7 @@ int main()
             else if(op == ' ')
             {
                 frase = frase + op2 + ' ';
+                add(&abb,op2,Arquivo);
                 op2.clear();
                 x = 0;
                 y++;
@@ -95,5 +101,6 @@ int main()
     }
     system("cls");
     cout << "Fim";
+    Arquivo.close();
     return 0;
 }

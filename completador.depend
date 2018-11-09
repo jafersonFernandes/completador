@@ -25,3 +25,28 @@
 
 1541684507 c:\users\dell\documents\github\completador\struct.hpp
 
+1541726344 source:c:\users\pichau\documents\github\completador\exibir.cpp
+	"exibir.hpp"
+	<windows.h>
+	<iostream>
+	<string>
+	<fstream>
+
+1541726284 c:\users\pichau\documents\github\completador\exibir.hpp
+	"struct.hpp"
+	<fstream>
+
+1541718206 c:\users\pichau\documents\github\completador\struct.hpp
+	<string>
+
+1541726586 source:c:\users\pichau\documents\github\completador\main.cpp
+	<iostream>
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string>
+	"exibir.hpp"
+	"struct.hpp"
+	<fstream>
+	<sstream>
+

@@ -1,6 +1,8 @@
 #include "exibir.hpp"
 #include <windows.h>
 #include <iostream>
+#include <string>
+#include <fstream>
 
 using namespace std;
 
@@ -21,25 +23,25 @@ int comparar(PL **abb, string plN)
         return -1;
 }
 
-int add(PL **abb, string plN)
+int add(PL **abb, string plN, ofstream &arq)
 {
     if (*abb==NULL)
     {
 
         PL *tmp = (PL*)malloc(sizeof(PL));
         tmp->pl = plN;
+        arq << plN << endl;
         tmp->cont = 0;
         tmp->maior = NULL;
         tmp->menor = NULL;
-
         *abb = tmp;
         return 0;
     }
     int t = comparar(&(*abb),plN);
     if (t == 0)
-        add(&(*abb)->menor,plN);
+        add(&(*abb)->menor,plN,arq);
     else if (t == 1)
-        add(&(*abb)->maior,plN);
+        add(&(*abb)->maior,plN,arq);
     else
         (*abb)->cont++;
 }
