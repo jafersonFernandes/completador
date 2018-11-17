@@ -32,7 +32,10 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="exibir.cpp" />
+		<Unit filename="exibir.hpp" />
 		<Unit filename="main.cpp" />
+		<Unit filename="struct.hpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />

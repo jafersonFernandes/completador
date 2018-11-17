@@ -4,9 +4,15 @@
 
 using namespace std;
 
-int  mgotoxy(int C, int L);
+void mgotoxy(int C, int L);
 int comparar(PL **abb, string plN);
-int add(PL **abb, string plN);
-int  vPL(PL **abb, string op2, int x);
+void add(PL **abb, string plN);
+void vPL(PL **abb, string pl);
+void addPLF(PLF **raiz, PL **abb, string pl);
+void capturar(string pl, char ch, PL **abb, PLF **raiz);
+void exibir(PL **abb);
+void exibirF(PLF **raiz);
+string upF(PLF **raiz, string pl);
+
 
 #endif

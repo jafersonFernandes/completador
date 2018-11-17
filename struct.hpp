@@ -5,22 +5,21 @@
 using namespace std;
 
 
-struct Palavra
+struct Palavra // arvore
 {
-    string  pl;
+    string  *pl;
     int cont;
     struct Palavra *maior;
     struct Palavra *menor;
 };
 typedef struct Palavra PL;
 
-struct palavraF
+
+struct palavraF // palavra da frase
 {
-    PL *palavra;
-    struct palavraF *proxima;
-    struct palavraF *anterior;
+    string *palavra;
+    struct palavraF *prox;
 };
 typedef struct palavraF PLF;
-
 
 #endif // _STRUCT_H
