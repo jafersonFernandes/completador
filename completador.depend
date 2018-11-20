@@ -8,7 +8,7 @@
 	<cstring>
 	<string>
 
-1542475359 source:c:\users\dell\documents\github\completador\main.cpp
+1542633443 source:c:\users\dell\documents\github\completador\main.cpp
 	<iostream>
 	<stdio.h>
 	<stdlib.h>
@@ -18,16 +18,16 @@
 	"exibir.hpp"
 	"struct.hpp"
 
-1542476265 source:c:\users\dell\documents\github\completador\exibir.cpp
+1542664898 source:c:\users\dell\documents\github\completador\exibir.cpp
 	"exibir.hpp"
 	<windows.h>
 	<iostream>
 	<fstream>
 	<conio.h>
 
-1542464846 c:\users\dell\documents\github\completador\exibir.hpp
+1542634714 c:\users\dell\documents\github\completador\exibir.hpp
 	"struct.hpp"
 
-1542467576 c:\users\dell\documents\github\completador\struct.hpp
+1542576149 c:\users\dell\documents\github\completador\struct.hpp
 	<string>
 

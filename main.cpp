@@ -12,11 +12,14 @@ using namespace std;
 int main()
 {
     PL *abb = NULL;
-    PLF *raiz = NULL;
+    //PLF *raiz = NULL;
+    FRASE *Frase = InicializaFrase();
     string pl = "";
     char ch;
-    capturar(pl, ch, &abb, &raiz);
-    exibirF(&raiz);
+    capturar(pl, ch, &abb, Frase);
+    //pl = upF(&raiz, pl);
+    //cout << pl << "\n";
+    exibirF(Frase);
     return 0;
 
 }
